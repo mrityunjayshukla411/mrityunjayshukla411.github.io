@@ -1,69 +1,176 @@
-.container {
-    max-width: 960px;
+body {
+    font-family: "Montserrat", sans-serif;
   }
   
-  /*
-   * Custom translucent site header
-   */
   
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+    }
+    
+    h2 {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: rgb(143, 134, 134);
+      font-weight: 500;
+    }
   
-  /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
+  /* Headings */
   
-  .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
+  .big-heading{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      line-height: 1.5;
   }
   
-  .product-device::before {
+  #title {
+    /* background-image: linear-gradient(
+      to right,
+      #ff00a2,
+      #ff0080,
+      #ff005c,
+      #ff2838,
+      #ff4900
+    ); */
+    background-image: linear-gradient(to right, #000000, #35131e, #671832, #9d1745, #d60756);
+    color: aliceblue;
+  }
+  
+  .container-fluid {
+    padding: 3% 15% 7%;
+    /* padding-bottom: 3%; */
+    /* padding-left: 15%;
+      padding-right: 15%; */
+  }
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+  }
+  .nav-item {
+    padding: 0px 18px;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+  }
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  .title-img {
+    width: 45%;
+    transform: rotate(25deg);
+    /* z-index: -1; */
     position: absolute;
     top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
+    right: 7%;
+  }
+  #features {
+    padding: 7% 15%;
+    background-color: azure;
+    position: relative;
+    z-index: 1;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 5%;
+  }
+  .icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
   }
   
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
+  .icon:hover {
+    color: #ff4c68;
   }
   
-  
-  /*
-   * Extra utilities
-   */
-  
-  .flex-equal > * {
-    flex: 1;
+  #testimonials {
+    color: aliceblue;
+    text-align: center;
+    background-color: #ef8172;
   }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  
+  .testimonial-text{
+      font-size: 3rem;
+      /* line-height: 1.5rem; */
+  }
+  
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  
+  #press {
+      background-color: #ef8172;
+      text-align: center;
+      padding-bottom: 3%;
+  }
+  .press-logo {
+      width: 15%;
+      margin: 20px 20px 50px;
+  }
+  
+  #pricing {
+      padding: 100px;
+      text-align: center;
+  }
+  
+  .price-text{
+      font-size: 3rem;
+      line-height: 1.5rem;
+  }
+  
+  .pricing-column {
+      padding: 3% 2%;
+  }
+  
+  @media (max-width: 1000px) {
+      #title {
+          text-align: center;
+      }
+      
+      .title-img {
+          width: 45%;
+          position: static;
+          transform: rotate(0);
+      }
+  }
+  
+  #cta {
+      background-color: #ff4c68;
+      color: aliceblue;
+      text-align: center;
+      padding: 7% 15%;
+  }
+  
+  .cta-heading {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+  }
+  #footer{
+      padding: 7% 15%;
+      text-align: center;
+  }
+  .social-icon{
+      margin: 20px 10px;
   }
