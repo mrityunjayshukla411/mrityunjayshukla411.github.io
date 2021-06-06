@@ -12,80 +12,258 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Headphoenix</title>
   </head>
   <body>
     <!-- <h1>Hello, world!</h1> -->
     <section id="title">
-        <div class="container-fluid">
-          <!-- Nav Bar -->
-    
-          <nav class="navbar navbar-expand-lg navbar-dark s">
-            <a class="navbar-brand" href="#">Headphoenix</a>
-            <!-- <div class="container-fluid"> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark s">
+          <a class="navbar-brand" href="#">HeadPhoenix</a>
+          <!-- <div class="container-fluid"> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Download</a>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </nav>
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">
+              Discover the difference between sound and music
+            </h1>
+            <button type="button" class="btn btn-dark btn-lg download-button">
+              <i class="fab fa-apple"></i> Download
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#footer">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#pricing">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#cta">Download</a>
-                </li>
-              </ul>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            >
+              <i class="fab fa-google-play"></i> Download
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="title-img"
+              src="backgroundImg.png"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-check-circle fa-4x icon"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have brands you have not even heard of</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-heart fa-4x icon"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Relax we are not eBay</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <h2 class="testimonial-text">Some of Our Products</h2>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- <h2 class="testimonial-text">
+                    I no longer have to sniff other dogs for love. I've found the
+                    hottest Corgi on TinDog. Woof.
+                  </h2> -->
+            <img
+              class="testimonial-image"
+              src="/carouselImg1.png"
+              alt="dog-profile"
+            />
+            <h3>BOSE Noise-cancelling Active noise control</h3>
+          </div>
+          <div class="carousel-item">
+            <!-- <h2 class="testimonial-text">
+                    My dog used to be so lonely, but with TinDog's help, they've found
+                    the love of their life. I think.
+                  </h2> -->
+            <img
+              class="testimonial-image"
+              src="/backgroundImg.png"
+              alt="lady-profile"
+            />
+            <h3
+              >Sennheiser HD 4.50 BTNC Noise-cancelling Active noise control</h3
+            >
+          </div>
+          <div class="carousel-item">
+            <!-- <h2 class="testimonial-text">
+                    My dog used to be so lonely, but with TinDog's help, they've found
+                    the love of their life. I think.
+                  </h2> -->
+            <img
+              class="testimonial-image"
+              src="/carouselImg3.png"
+              alt="lady-profile"
+            />
+            <h3
+              >Noise-cancelling headphones Active noise control Wireless JBL</h3>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonial-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2>A Plan for Every Audiophile's Needs</h2>
+      <p>Simple and affordable price plans for you and your wallet.</p>
+
+      <div class="row">
+        <div class="pricing-columm col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Basic</h3>
             </div>
-            <!-- </div> -->
-          </nav>
-          <!-- Title -->
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 class="big-heading" >Discover the difference between sound and music</h1>
-              <button type="button" class="btn btn-dark btn-lg download-button">
-                <i class="fab fa-apple"></i> Download
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <br>
+              <p>5% discount</p>
+              <p>Standard 7-day Delivery</p>
+              <!-- <p>Unlimited App Usage</p> -->
+              <button
+                class="btn btn-lg btn-block btn-outline-dark"
+                type="button"
+              >
+                Sign Up
               </button>
-              <button type="button" class="btn btn-outline-light btn-lg download-button">
-                <i class="fab fa-google-play"></i> Download
-              </button>
-            </div>
-            <div class="col-lg-6">
-              <img class="title-img" src="backgroundImg.png" alt="iphone-mockup" />
             </div>
           </div>
         </div>
+        <div class="pricing-columm col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Premium</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <br>
+              <p>15% discount</p>
+              <p>3-day Delivery</p>
+              <!-- <p>Unlimited App Usage</p> -->
+              <button class="btn btn-lg btn-block btn-dark" type="button">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-columm col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Elite</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99 / mo</h2>
+              <br>
+              <p>30% discount</p>
+              <p>1-day rush Delivery</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+        <h3 class="cta-heading" >Checkout our app</h3>
+        <button type="button" class="btn btn-dark btn-lg download-button">
+          <i class="fab fa-apple"></i> Download
+        </button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button">
+          <i class="fab fa-google-play"></i> Download
+        </button>
       </section>
 
-        <section id="features">
-            <div class="row">
-              <div class="feature-box col-lg-4">
-                <i class="fas fa-check-circle fa-4x icon"></i>
-                <h3>Easy to use.</h3>
-                <p>So easy to use, even your dog could do it.</p>
-              </div>
-        
-              <div class="feature-box col-lg-4">
-                <i class="fas fa-bullseye fa-4x icon"></i>
-                <h3>Elite Clientele</h3>
-                <p>We have brands you have not even heard of</p>
-              </div>
-        
-              <div class="feature-box col-lg-4">
-                <i class="fas fa-heart fa-4x icon"></i>
-                <h3>Guaranteed to work.</h3>
-                <p>Relax we are not eBay</p>
-              </div>
-            </div>
-          </section>
+    <!-- footer -->
+
+
+        <footer id="footer">
+            <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fas fa-envelope"></i>
+            <p>© Copyright 2021 HeadPhoenix</p>
+        </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://kit.fontawesome.com/1a0c41264e.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
