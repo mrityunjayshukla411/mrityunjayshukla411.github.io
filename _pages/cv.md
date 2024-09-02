@@ -11,37 +11,35 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Micro-architectural Security and ML/DL Security, CSE@IIT Bombay, 2030 (expected)
+* B.Tech in Electronics and Communication Engineering, Manipal Institute of Technology, 2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Spring 2024: Project Intern
+  * IIT Kanpur
+  * Supervisor: Dr. Amey Karkare
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2023: Research Intern
+  * IIT Kanpur
+  * Supervisor: Dr. Arnab Bhattarcharya
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Spring 2023: Project Intern 
+  * IIT Guwahati
+  * Supervisor: Dr. Amit Awekar
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+  * Tensorflow
+  * FastAPI, Flask
+  * Scrapy
+* JavaScript
+  * NextJS
+  * NodeJS
+* C/C++
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -58,7 +56,8 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+   -->
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
