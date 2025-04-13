@@ -16,4 +16,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Phd Scholar at IIT Bombay in the CSE Department. The primary focus of my research is micro-architectural security and ML/DL security. I am working under [Prof. Biswabandan Panda](https://www.cse.iitb.ac.in/~biswa/) and [Prof. Sayandeep Saha](https://sites.google.com/view/sayandeepsaha/home).
+I am a Phd Scholar at IIT Bombay in the CSE Department. The primary focus of my research is micro-architectural security and ML/DL security. I am working under [Prof. Sayandeep Saha](https://sites.google.com/view/sayandeepsaha/home) and [Prof. Biswabandan Panda](https://www.cse.iitb.ac.in/~biswa/).
