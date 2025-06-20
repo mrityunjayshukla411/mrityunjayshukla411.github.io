@@ -9,7 +9,21 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "post-a-post-with-image-galleries",
+  },{id: "nav-repositories",
+          title: "repositories",
+          description: "The good stuff",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
@@ -361,7 +375,13 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-joined-the-sharc-research-group",
+    },{id: "news-joined-the-cse-department-at-iit-bombay-as-research-scholar",
+          title: 'Joined the CSE Department at IIT Bombay as Research Scholar.',
+          description: "",
+          section: "News",},{id: "news-joined-the-casper-research-group",
+          title: 'Joined the CASPER Research Group.',
+          description: "",
+          section: "News",},{id: "news-joined-the-sharc-research-group",
           title: 'Joined the SHArC Research Group.',
           description: "",
           section: "News",},{id: "projects-project-1",
@@ -429,13 +449,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
