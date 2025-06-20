@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Hemlo # the website title (if blank, full name will be used instead)
+title: Hemloo # the website title (if blank, full name will be used instead)
 first_name: Mrityunjay
 middle_name:
 last_name: Shukla
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Best way to reach me is via email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -156,10 +156,10 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -184,6 +184,8 @@ kramdown:
 include:
   - _scripts/
   - _pages/about.md
+  - _pages/cv.md
+  - _pages/repositories.md
 exclude:
   - bin/
   - CONTRIBUTING.md
