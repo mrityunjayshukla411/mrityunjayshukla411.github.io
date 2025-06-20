@@ -1,12 +1,20 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description:
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+---------------
+---------------
+## CS101: Computer Programming and Utilization 
+Served as one of the head teaching assistants for a batch of 600+ students, with the responsibility of managing other teaching assitants as well as handling the course logitics and academically mentoring students over the duration of the course.
 
-Organize your courses by years, topics, or universities, however you like!
+
+## CS230/231: Digital Logic Design and Computer Architecture
+Served as the head teaching assistant for a batch of 200+ students, with the responsibility of managing other teaching assitants as well as handling the course logitics and academically mentoring students over the duration of the course.
+
+---------------
+---------------
