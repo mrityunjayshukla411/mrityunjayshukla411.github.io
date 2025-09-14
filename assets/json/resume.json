@@ -221,11 +221,6 @@
   ],
   "references": [
     {
-      "name": "Professor Sayandeep Saha",
-      "icon": "fa-solid fa-laptop",
-      "reference": "https://www.cse.iitb.ac.in/~sayandeepsaha/"
-    },
-    {
       "name": "Professor Biswabandan Panda",
       "icon": "fa-solid fa-thumbtack",
       "reference": "https://www.cse.iitb.ac.in/~biswa/"
