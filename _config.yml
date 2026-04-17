@@ -187,6 +187,7 @@ include:
   - _pages/cv.md
   - _pages/repositories.md
   - _pages/teaching.md
+  - _pages/publications.md
 exclude:
   - bin/
   - CONTRIBUTING.md
