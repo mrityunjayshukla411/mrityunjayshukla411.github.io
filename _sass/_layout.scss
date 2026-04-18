@@ -5,7 +5,8 @@
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
-  background-color: var(--global-bg-color);
+  background: var(--global-body-bg);
+  min-height: 100vh;
 
   h1,
   h2,

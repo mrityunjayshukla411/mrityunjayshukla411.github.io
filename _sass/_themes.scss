@@ -6,12 +6,7 @@
 
 :root {
   --global-bg-color: #{$white-color};
-
-  body {
-    background: #ffffff;
-    background: linear-gradient(330deg, rgba(255, 255, 255, 1) 60%, rgba(38, 152, 186, 1) 100%);
-    min-height: 100vh;
-  }
+  --global-body-bg: linear-gradient(330deg, rgba(255, 255, 255, 1) 60%, rgba(38, 152, 186, 1) 100%);
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
@@ -83,12 +78,7 @@
 
 html[data-theme="dark"] {
   --global-bg-color: #000000;
-
-  body {
-    background: #000000;
-    background: linear-gradient(150deg, rgba(0, 0, 0, 1) 33%, rgba(255, 94, 0, 1) 100%);
-    min-height: 100vh;
-  }
+  --global-body-bg: linear-gradient(150deg, rgba(0, 0, 0, 1) 33%, rgba(255, 94, 0, 1) 100%);
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
