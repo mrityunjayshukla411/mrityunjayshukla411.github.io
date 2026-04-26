@@ -4,5 +4,11 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - gpu-mode/lectures
+  - mrityunjayshukla411/sass-king
+  - mrityunjayshukla411/matrix-multiplication-on-crack
+  - mrityunjayshukla411/llvm-kaleidoscope
+  - mrityunjayshukla411/accel-sim-setup
+  - mrityunjayshukla411/vdex
   - mrityunjayshukla411/decs_project
+  - gpu-mode/lectures
+
