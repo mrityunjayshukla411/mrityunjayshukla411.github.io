@@ -439,14 +439,14 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "research_log-transformers-architecture-overview",
-          title: 'Transformers — Architecture Overview',
-          description: "Consolidated notes on the transformer architecture, key variants, and where each is used.",
+            },},{id: "research_log-sample-topic",
+          title: 'Sample-topic',
+          description: "coming soon...",
           section: "Research_log",handler: () => {
               window.location.href = "/research-log/topics/transformers-overview/";
-            },},{id: "research_log-attention-is-all-you-need",
-          title: 'Attention Is All You Need',
-          description: "Notes on the original transformer paper by Vaswani et al. (2017).",
+            },},{id: "research_log-sample-paper",
+          title: 'Sample-paper',
+          description: "coming soon...",
           section: "Research_log",handler: () => {
               window.location.href = "/research-log/papers/attention-is-all-you-need/";
             },},{id: "research_log-april-30-2026",
