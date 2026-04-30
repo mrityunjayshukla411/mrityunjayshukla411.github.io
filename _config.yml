@@ -152,6 +152,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  research_log:
+    output: true
+    permalink: /research-log/:categories/:title/
 
 announcements:
   enabled: true
@@ -188,6 +191,10 @@ include:
   - _pages/repositories.md
   - _pages/teaching.md
   - _pages/publications.md
+  - _pages/research-log.md
+  - _pages/research-log-daily-log.md
+  - _pages/research-log-papers.md
+  - _pages/research-log-topics.md
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -238,6 +245,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: research_log
+    values:
+      layout: post
 
 sass:
   style: compressed
