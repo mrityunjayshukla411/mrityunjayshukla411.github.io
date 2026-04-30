@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-research-log",
+          title: "research log",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research-log/";
+          },
         },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
@@ -432,6 +439,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "research_log-transformers-architecture-overview",
+          title: 'Transformers — Architecture Overview',
+          description: "Consolidated notes on the transformer architecture, key variants, and where each is used.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/topics/transformers-overview/";
+            },},{id: "research_log-attention-is-all-you-need",
+          title: 'Attention Is All You Need',
+          description: "Notes on the original transformer paper by Vaswani et al. (2017).",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/papers/attention-is-all-you-need/";
+            },},{id: "research_log-april-30-2026",
+          title: 'April 30, 2026',
+          description: "First day of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-one/";
             },},{
         id: 'social-email',
         title: 'email',
