@@ -2,7 +2,7 @@
 layout: default
 permalink: /research-log/
 title: research log
-nav: true
+nav: false
 nav_order: 9
 ---
 
