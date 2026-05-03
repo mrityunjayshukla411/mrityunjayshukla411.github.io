@@ -1,15 +1,113 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
+const lightColorSchemes = [
+  {
+    "--global-bg-color": "#ffffff",
+    "--global-body-bg": "linear-gradient(150deg, rgba(255,255,255,1) 30%, rgba(255,94,0,1) 100%)",
+    "--global-theme-color": "#ff5e00",
+    "--global-hover-color": "#ff5e00",
+  },
+  {
+    "--global-bg-color": "#ffffff",
+    "--global-body-bg": "linear-gradient(150deg, rgba(255,255,255,1) 30%, rgba(96,165,250,1) 100%)",
+    "--global-theme-color": "#60a5fa",
+    "--global-hover-color": "#60a5fa",
+  },
+  {
+    "--global-bg-color": "#ffffff",
+    "--global-body-bg": "linear-gradient(150deg, rgba(255,255,255,1) 30%, rgba(74,222,128,1) 100%)",
+    "--global-theme-color": "#4ade80",
+    "--global-hover-color": "#4ade80",
+  },
+  {
+    "--global-bg-color": "#ffffff",
+    "--global-body-bg": "linear-gradient(150deg, rgba(255,255,255,1) 30%, rgba(192,132,252,1) 100%)",
+    "--global-theme-color": "#c084fc",
+    "--global-hover-color": "#c084fc",
+  },
+  {
+    "--global-bg-color": "#ffffff",
+    "--global-body-bg": "linear-gradient(150deg, rgba(255,255,255,1) 30%, rgba(244,114,182,1) 100%)",
+    "--global-theme-color": "#f472b6",
+    "--global-hover-color": "#f472b6",
+  },
+];
+
+const darkColorSchemes = [
+  {
+    "--global-bg-color": "#000000",
+    "--global-body-bg": "linear-gradient(150deg, rgba(0,0,0,1) 30%, rgba(255,94,0,1) 100%)",
+    "--global-theme-color": "#ff5e00",
+    "--global-hover-color": "#ff5e00",
+  },
+  {
+    "--global-bg-color": "#000000",
+    "--global-body-bg": "linear-gradient(150deg, rgba(0,0,0,1) 30%, rgba(96,165,250,1) 100%)",
+    "--global-theme-color": "#60a5fa",
+    "--global-hover-color": "#60a5fa",
+  },
+  {
+    "--global-bg-color": "#000000",
+    "--global-body-bg": "linear-gradient(150deg, rgba(0,0,0,1) 30%, rgba(74,222,128,1) 100%)",
+    "--global-theme-color": "#4ade80",
+    "--global-hover-color": "#4ade80",
+  },
+  {
+    "--global-bg-color": "#000000",
+    "--global-body-bg": "linear-gradient(150deg, rgba(0,0,0,1) 30%, rgba(192,132,252,1) 100%)",
+    "--global-theme-color": "#c084fc",
+    "--global-hover-color": "#c084fc",
+  },
+  {
+    "--global-bg-color": "#000000",
+    "--global-body-bg": "linear-gradient(150deg, rgba(0,0,0,1) 30%, rgba(244,114,182,1) 100%)",
+    "--global-theme-color": "#f472b6",
+    "--global-hover-color": "#f472b6",
+  },
+];
+
+// Pick a new random scheme for the given theme (avoids repeating the current one) and persist it.
+let pickRandomScheme = (theme) => {
+  const schemes = theme === "dark" ? darkColorSchemes : lightColorSchemes;
+  const currentIndex = parseInt(localStorage.getItem(`${theme}-scheme-index`) ?? "0");
+  let newIndex;
+  do {
+    newIndex = Math.floor(Math.random() * schemes.length);
+  } while (newIndex === currentIndex && schemes.length > 1);
+  localStorage.setItem(`${theme}-scheme-index`, newIndex);
+};
+
+// Inject the saved color scheme for the given theme as inline CSS custom properties.
+let applyColorScheme = (theme) => {
+  const schemes = theme === "dark" ? darkColorSchemes : lightColorSchemes;
+  const index = parseInt(localStorage.getItem(`${theme}-scheme-index`) ?? "0");
+  const scheme = schemes[Math.min(index, schemes.length - 1)];
+  Object.entries(scheme).forEach(([prop, value]) => {
+    document.documentElement.style.setProperty(prop, value);
+  });
+};
+
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
+  let newSetting;
   if (themeSetting == "system") {
-    setThemeSetting("light");
+    newSetting = "light";
   } else if (themeSetting == "light") {
-    setThemeSetting("dark");
+    newSetting = "dark";
   } else {
-    setThemeSetting("system");
+    newSetting = "system";
   }
+
+  const newComputedTheme =
+    newSetting === "system"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+      : newSetting;
+  pickRandomScheme(newComputedTheme);
+
+  setThemeSetting(newSetting);
 };
 
 // Change the theme setting and apply the theme.
@@ -24,6 +122,8 @@ let setThemeSetting = (themeSetting) => {
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
   let theme = determineComputedTheme();
+
+  applyColorScheme(theme);
 
   transTheme();
   setHighlight(theme);
