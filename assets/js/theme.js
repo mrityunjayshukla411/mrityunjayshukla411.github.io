@@ -3,33 +3,15 @@
 const lightColorSchemes = [
   {
     "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(330deg, #ffffff 30%, #ff5e00 100%)",
-    "--global-theme-color": "#ff5e00",
-    "--global-hover-color": "#ff5e00",
-  },
-  {
-    "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(330deg, #ffffff 30%, #00304a 100%)",
+    "--global-body-bg": "linear-gradient(150deg, #ffffff 30%, #00304a 100%)",
     "--global-theme-color": "#00304a",
     "--global-hover-color": "#00304a",
   },
   {
     "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(330deg, #ffffff 30%, #009d76 100%)",
-    "--global-theme-color": "#009d76",
-    "--global-hover-color": "#009d76",
-  },
-  {
-    "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(330deg, #ffffff 30%, #220044 100%)",
-    "--global-theme-color": "#220044",
-    "--global-hover-color": "#220044",
-  },
-  {
-    "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(330deg, #ffffff 30%, #b20059 100%)",
-    "--global-theme-color": "#b20059",
-    "--global-hover-color": "#b20059",
+    "--global-body-bg": "linear-gradient(150deg, #ffffff 30%, #ff5e00 100%)",
+    "--global-theme-color": "#ff5e00",
+    "--global-hover-color": "#ff5e00",
   },
 ];
 
@@ -43,8 +25,8 @@ const darkColorSchemes = [
   {
     "--global-bg-color": "#000000",
     "--global-body-bg": "linear-gradient(150deg, #000000 30%, #00304a 100%)",
-    "--global-theme-color": "#00304a",
-    "--global-hover-color": "#00304a",
+    "--global-theme-color": "#02a3fa",
+    "--global-hover-color": "#02a3fa",
   },
   {
     "--global-bg-color": "#000000",
@@ -55,8 +37,8 @@ const darkColorSchemes = [
   {
     "--global-bg-color": "#000000",
     "--global-body-bg": "linear-gradient(150deg, #000000 30%, #220044 100%)",
-    "--global-theme-color": "#220044",
-    "--global-hover-color": "#220044",
+    "--global-theme-color": "#b20059",
+    "--global-hover-color": "#b20059",
   },
   {
     "--global-bg-color": "#000000",
