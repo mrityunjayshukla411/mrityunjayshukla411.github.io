@@ -502,6 +502,11 @@ ninja.data = [{
           description: "Day 12 of keeping a structured research log.",
           section: "Research_log",handler: () => {
               window.location.href = "/research-log/daily-log/day-12/";
+            },},{id: "research_log-may-12-2026",
+          title: 'May 12, 2026',
+          description: "Day 13 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-13/";
             },},{
         id: 'social-email',
         title: 'email',
