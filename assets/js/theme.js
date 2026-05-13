@@ -3,16 +3,10 @@
 const lightColorSchemes = [
   {
     "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(150deg, #ffffff 30%, #00304a 100%)",
-    "--global-theme-color": "#00304a",
-    "--global-hover-color": "#00304a",
-  },
-  {
-    "--global-bg-color": "#ffffff",
-    "--global-body-bg": "linear-gradient(150deg, #ffffff 30%, #ff5e00 100%)",
-    "--global-theme-color": "#ff5e00",
-    "--global-hover-color": "#ff5e00",
-  },
+    "--global-body-bg": "linear-gradient(150deg, #ffffff 30%, #02a3fa 100%)",
+    "--global-theme-color": "#32b6fd",
+    "--global-hover-color": "#32b6fd",
+  }
 ];
 
 const darkColorSchemes = [
