@@ -637,6 +637,16 @@ ninja.data = [{
           description: "Day 39 of keeping a structured research log.",
           section: "Research_log",handler: () => {
               window.location.href = "/research-log/daily-log/day-39/";
+            },},{id: "research_log-june-8-2026",
+          title: 'June 8, 2026',
+          description: "Day 40 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-40/";
+            },},{id: "research_log-june-9-2026",
+          title: 'June 9, 2026',
+          description: "Day 41 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-41/";
             },},{
         id: 'social-email',
         title: 'email',
