@@ -22,12 +22,6 @@ const darkColorSchemes = [
     "--global-theme-color": "#02a3fa",
     "--global-hover-color": "#02a3fa",
   },
-  {
-    "--global-bg-color": "#000000",
-    "--global-body-bg": "linear-gradient(150deg, #000000 30%, #009d76 100%)",
-    "--global-theme-color": "#009d76",
-    "--global-hover-color": "#009d76",
-  },
 ];
 
 // Pick a new random scheme for the given theme (avoids repeating the current one) and persist it.
