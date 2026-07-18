@@ -732,6 +732,36 @@ ninja.data = [{
           description: "Day 58 of keeping a structured research log.",
           section: "Research_log",handler: () => {
               window.location.href = "/research-log/daily-log/day-58/";
+            },},{id: "research_log-july-13-2026",
+          title: 'July 13, 2026',
+          description: "Day 59 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-59/";
+            },},{id: "research_log-july-14-2026",
+          title: 'July 14, 2026',
+          description: "Day 60 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-60/";
+            },},{id: "research_log-july-15-2026",
+          title: 'July 15, 2026',
+          description: "Day 61 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-61/";
+            },},{id: "research_log-july-16-2026",
+          title: 'July 16, 2026',
+          description: "Day 62 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-62/";
+            },},{id: "research_log-july-17-2026",
+          title: 'July 17, 2026',
+          description: "Day 63 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-63/";
+            },},{id: "research_log-july-18-2026",
+          title: 'July 18, 2026',
+          description: "Day 64 of keeping a structured research log.",
+          section: "Research_log",handler: () => {
+              window.location.href = "/research-log/daily-log/day-64/";
             },},{
         id: 'social-email',
         title: 'email',
